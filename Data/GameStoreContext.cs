@@ -12,6 +12,7 @@ public class GameStoreContext(DbContextOptions<GameStoreContext> options)
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        // Here I set each genre of the games so I can be distinguish 
         modelBuilder.Entity<Genre>().HasData(
             new { Id = 1, Name = "Fighting" },
             new { Id = 2, Name = "Roleplaying" },
