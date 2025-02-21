@@ -2,6 +2,7 @@
 
 public class Game
 {
+    // in this class we specify the properties of the games
     public int Id { get; set; }
 
     public required string Name { get; set; }
